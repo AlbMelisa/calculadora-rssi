@@ -1,0 +1,155 @@
+/* Estilos generales de la tarjeta */
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 900px; /* Tamaño máximo para pantallas grandes */
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+/* Estilo para la fila de imagen y contenido */
+.card-row {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas si es necesario */
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Estilo para la imagen */
+.card-image {
+  flex: 1 1 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.image-align {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+}
+
+/* Estilo para el contenido de la tarjeta */
+.card-content {
+  flex: 1 1 100%; /* Ocupa todo el ancho disponible en pantallas pequeñas */
+  padding: 20px;
+}
+
+/* Títulos */
+.card-content h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.card-content p {
+  margin: 10px 0 20px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Botones */
+.card-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* Asegura que los botones se acomoden bien */
+  justify-content: space-between;
+}
+
+/* Estilo para los botones */
+.contact-button,
+.profile-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  width: 100%; /* Hace que los botones ocupen el 100% del ancho disponible en pantallas pequeñas */
+}
+
+/* Botón de contacto */
+.contact-button {
+  background-color: black;
+  color: #fff;
+  border: none;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+/* Botón de perfil */
+.profile-button {
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+}
+
+.profile-button:hover {
+  background-color: black;
+  color: #fff;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: px) {
+  /* Estilo para la tarjeta en pantallas pequeñas */
+  .card {
+    width: 90%; /* La tarjeta ocupará el 90% del ancho disponible */
+    max-width: 500px; /* El tamaño máximo será 500px */
+    padding: 15px; /* Ajustamos el padding */
+  }
+
+  /* Aseguramos que la fila se acomode en pantallas pequeñas */
+  .card-row {
+    flex-direction: column; /* Cambia la fila a columna en pantallas pequeñas */
+    align-items: center; /* Centra el contenido */
+    gap: 15px; /* Ajusta el espacio entre los elementos */
+  }
+
+  /* Ajustes a la imagen para pantallas pequeñas */
+  .card-image {
+    flex: 1 1 100%; /* La imagen ocupará todo el ancho */
+    padding: 10px 0; /* Ajustamos el padding */
+  }
+
+  /* Ajustes al contenido */
+  .card-content {
+    padding: 10px;
+    text-align: center; /* Centra el texto */
+  }
+
+  /* Ajustes a la fuente */
+  .card-content h2 {
+    font-size: 20px; /* Reducimos el tamaño del título */
+  }
+
+  .card-content p {
+    font-size: 14px; /* Reducimos el tamaño del párrafo */
+  }
+
+  /* Los botones se apilan verticalmente */
+  .card-buttons {
+    flex-direction: column; /* Los botones se apilan en una columna */
+    gap: 15px; /* Espacio entre los botones */
+  }
+
+  /* Aseguramos que los botones ocupen el 100% en pantallas pequeñas */
+  .contact-button,
+  .profile-button {
+    width: 100%;
+    padding: 12px 20px; /* Ajustamos el tamaño de los botones */
+  }
+}
+.sticky-header tr td {
+  width: 50%;
+}

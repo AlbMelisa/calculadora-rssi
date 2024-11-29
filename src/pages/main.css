@@ -1,0 +1,18 @@
+.title3 a{
+  text-decoration: none;
+}
+.color-title{
+  background-color: blue;
+  color: white;
+}
+.color-title2{
+  background-color: black;
+  color: white;
+}
+.image-align{
+  height: 250px;
+  width: 600px;
+}
+.color-back{
+  background-color: #1F509A;
+}

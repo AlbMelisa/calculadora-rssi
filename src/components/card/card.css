@@ -1,0 +1,219 @@
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 900px;
+  margin: 20px auto;
+  padding: 0px;
+  /* padding: 10px; */
+}
+
+/* Estilo para el layout en dos columnas */
+.card-row {
+  display: flex; /* Flexbox: distribuye en filas (row) */
+  flex-direction: row; /* Filas por defecto */
+  align-items: center; /* Centra los elementos verticalmente */
+   /* Espaciado entre las columnas */
+}
+
+/* Columna izquierda: Imagen */
+.card-image {
+  flex: 0 0 30%; /* Ocupa el 30% del ancho */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.placeholder-image {
+  width: 80px;
+  height: 80px;
+  background: #d9d9d9;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .card-row {
+    flex-direction: column; /* Cambiar de filas a columnas */
+  }
+
+  .card-image {
+    flex: 0 0 100%; /* Hacer que la imagen ocupe el 100% del ancho */
+    padding: 10px 0; /* Ajustar el padding */
+  }
+
+  .card-content {
+    flex: 1; /* Mantener el contenido con el resto del espacio */
+    padding: 15px;
+  }
+
+  .image-align {
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Mantener la proporción de la imagen */
+  }
+
+  .card-buttons {
+    flex-direction: column; /* Poner los botones en una columna */
+    gap: 15px; /* Espaciado entre los botones */
+  }
+}
+/* Columna derecha: Contenido */
+.card-content {
+  flex: 1; /* Toma el resto del espacio disponible */
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.card-content p {
+  margin: 10px 0 20px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Estilo para los botones */
+.card-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.profile-button {
+  background-color: #fff;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.profile-button:hover {
+  background-color: black;
+  color: #fff;
+}
+/* Estilos del Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content-two {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 970px;
+  height: 510px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+} 
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color: #000;
+}
+
+.close-modal-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-modal-button:hover {
+  background-color: #218838;
+}
+.image-align{
+  width: 200px;
+  height: 200px;
+}
+
+.calculate-button{
+  background-color: #28a745;
+  color: white;
+  border-radius: 2px;
+  border:1px solid #28a745;
+}
+.calculate-button:hover{
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  border:1px solid #28a745;
+}
+.calculate-normal{
+  background-color: black;
+  color: #d9d9d9;
+  padding: 3px 3px 0px 3px;
+  border-radius: 2px;
+}
+.calculate-green{
+  background-color: #28a745;
+  color: #d9d9d9;
+  padding: 3px 3px 0px 3px;
+  border-radius: 2px;
+
+}
+.calculate-red{
+  background-color: #ab1318;
+  color: #d9d9d9;
+  padding: 3px 3px 0px 3px;
+  border-radius: 2px;
+
+}
+.calculate-yellow{
+  background-color: yellow;
+  color: #0b0b0b;
+  padding: 3px 3px 0px 3px;
+  border-radius: 2px;
+}
+.card-img{
+  padding: 0px;
+  width: 325px;
+  height: 225px;
+}

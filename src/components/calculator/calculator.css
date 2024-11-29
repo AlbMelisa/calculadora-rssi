@@ -1,0 +1,30 @@
+.color-backgraound{
+  background-color: #1F509A;
+  padding: 3px;
+  color: white;
+  text-align: center;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.color-backgraound2{
+  background-color: #0A3981;
+  padding: 3px;
+  color: white;
+  text-align: center;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.calculate-button{
+  background-color: #28a745;
+  color: white;
+  border-radius: 2px;
+  border:1px solid #28a745;
+  margin: 5px;
+  height: 30px;
+  width: 150px;
+}
+.calculate-button:hover{
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  border:1px solid #28a745;
+}

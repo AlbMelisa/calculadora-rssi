@@ -1,0 +1,34 @@
+.style-image-card{
+  text-align: center;
+  height: 170px;
+  width: 170px;
+}
+th{
+  width: 50%;
+}
+.calculate-normal{
+  background-color: black;
+  color: #d9d9d9;
+  padding: 3px 3px 0px 3px;
+  border-radius: 2px;
+}
+.calculate-green{
+  background-color: #28a745;
+  color: #d9d9d9;
+  padding: 3px 3px 0px 3px;
+  border-radius: 2px;
+
+}
+.calculate-red{
+  background-color: #ab1318;
+  color: #d9d9d9;
+  padding: 3px 3px 0px 3px;
+  border-radius: 2px;
+
+}
+.calculate-yellow{
+  background-color: yellow;
+  color: #0b0b0b;
+  padding: 3px 3px 0px 3px;
+  border-radius: 2px;
+}
