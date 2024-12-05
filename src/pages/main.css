@@ -16,3 +16,21 @@
 .color-back{
   background-color: #1F509A;
 }
+.square-green {
+  width: 30px;
+  height: 30px;
+  background-color: green; /* Azul bootstrap */
+  border-radius: 4px;
+}
+.square-yellow {
+  width: 30px;
+  height: 30px;
+  background-color: yellow; /* Azul bootstrap */
+  border-radius: 4px;
+}
+.square-red {
+  width: 30px;
+  height: 30px;
+  background-color: red; /* Azul bootstrap */
+  border-radius: 4px;
+}

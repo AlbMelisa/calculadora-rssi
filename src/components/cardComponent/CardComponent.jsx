@@ -25,10 +25,10 @@ const antennas = [
     description:
       "Conectividad de larga distancia y utiliza un patrón de antena direccional para mejorar la inmunidad del ruido.",
     frequencyOne: "5",
-    antennaType: "Antena Direccional",
+    antennaType: "Direccional",
     antennaGain: 23,
     image: image1,
-    price: "$149.324",
+    price: "$149.324",    
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const antennas = [
     model: "Airmax Antena Amo-5g13 ",
     description: "",
     frequencyOne: "5",
-    antennaType: "Antena Omnidireccional",
+    antennaType: "Omnidireccional",
     description:
       "Ideal para redes inalámbricas en entornos que requieren cobertura en 360 grados en la banda de 5 GHz.",
     antennaGain: 13,
@@ -52,7 +52,7 @@ const antennas = [
     description: "",
     frequencyOne: "2.4",
     frequencyTwo: "5",
-    antennaType: "Antena Direccional",
+    antennaType: "Direccional",
     description:
       "Ideal para quienes necesitan un rango confiable y una conexión estable en aplicaciones al aire libre con enfoque direccional.",
     antennaGain: 13,
@@ -79,6 +79,8 @@ const routers = [
     powerOne: 30,
     image: router2,
     powerTwo: 30,
+    velocidad: "1800 Mbps"
+
   },
   {
     id: 2,
@@ -96,6 +98,7 @@ const routers = [
     powerOne: 20,
     image: router3,
     powerTwo: 23,
+    velocidad: "3000 Mbps"
   },
   {
     id: 3,
@@ -111,6 +114,8 @@ const routers = [
     price: "$64.890",
     image: router1,
     powerOne: 20,
+    velocidad: "300 Mbps"
+
   },
 ];
 const CardComponent = ({ id, title, price, description, type }) => {
@@ -142,7 +147,7 @@ const CardComponent = ({ id, title, price, description, type }) => {
           {/* <Card.Text>
           {description}
           </Card.Text> */}
-          <Card.Footer className="text-center">{price}</Card.Footer>
+          <Card.Footer className="text-center fw-bold">{price}</Card.Footer>
         </Card.Body>
       </Card>
 
@@ -160,8 +165,8 @@ const CardComponent = ({ id, title, price, description, type }) => {
             </Modal.Body>
           </div>
           <div className="col-md-7">
-            <Modal.Title className="p-2 pt-0 ">{title}</Modal.Title>
-            <Modal.Body className="pt-0 text-center">{price}</Modal.Body>
+            <Modal.Title className="p-2 pt-0 text-center ">{title}</Modal.Title>
+            <Modal.Body className="pt-0 text-center fw-bold">{price}</Modal.Body>
             <Modal.Body className="pt-0">{description}</Modal.Body>
           </div>
           <ModalBody className="pt-0">
@@ -194,18 +199,36 @@ const CardComponent = ({ id, title, price, description, type }) => {
                     </td>
                   </tr>
                 )}
+                {item?.powerOne && (
+                  <tr>
+                    <td>Potencia</td>
+                    <td>{item?.powerOne}dBm</td>
+                  </tr>
+                )}
+                {item?.velocidad && (
+                  <tr>
+                    <td>Velocidad</td>
+                    <td>{item?.velocidad}</td>
+                  </tr>
+                )}
                 {item?.antennaGain && (
                   <tr>
                     <td>Ganancia de Antena</td>
                     <td>{item?.antennaGain}dBi</td>
                   </tr>
                 )}
-                {item?.externalAntennas !== undefined && (
+                {item?.antennaType && (
+                  <tr>
+                    <td>Antena</td>
+                    <td>{item?.antennaType}</td>
+                  </tr>
+                )}
+                {/* {item?.externalAntennas !== undefined && (
                   <tr>
                     <td>Antenas Externas</td>
                     <td>{item?.externalAntennas}</td>
                   </tr>
-                )}
+                )} */}
               </tbody>
             </Table>
           </ModalBody>

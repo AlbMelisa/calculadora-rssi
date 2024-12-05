@@ -55,6 +55,7 @@ export const routers = [
     externalAntennas: 4,
     price: "$62.041",
     powerOne: 30,
+    velocidad: "1800 Mbps"
   },
   {
     id: 2,
@@ -70,6 +71,7 @@ export const routers = [
     externalAntennas: 4,
     price: "$129.990",
     powerOne: 20,
+    velocidad: "3000 Mbps"
   },
   {
     id: 3,
@@ -84,6 +86,8 @@ export const routers = [
     externalAntennas: 0,
     price: "$64.890",
     powerOne: 20,
+    velocidad: "300 Mbps"
+
   },
 ];
 
